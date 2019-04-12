@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "'My Path to Becoming a Programmer'"
-date:       2019-04-12 18:38:07 +0000
+date:       2019-04-12 14:38:08 -0400
 permalink:  my_path_to_becoming_a_programmer
 ---
 
