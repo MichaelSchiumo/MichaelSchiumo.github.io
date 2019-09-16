@@ -1,0 +1,43 @@
+---
+layout: post
+title:      "Rails: Take 2"
+date:       2019-09-16 20:33:35 +0000
+permalink:  rails_take_2
+---
+
+
+Life is replete with setbacks. That is exactly what I have encountered on this journey to becoming a worthy program. Thus, it was no surprise when I was faced with the reality of repeating the Rails section. Looking back, this was a positive thing for my education, as it allowed me to really hone in on key topics and skills that I lacked previously. 
+
+My project this time around was something that became a test in perfection. I spent countless hours refining my code, and the aesthetics of my application. Unfortunately, I haven't really figured out how to use Bootstrap too well, so they extent of my aesthetic revolution was formatting text and adding some pretty pictures to give the website a vibrant feel. It does, admittedly, now have the appearance of an application that you might use, albeit a very simplistic one. 
+
+My application is called Cuisine Curator, and allows users to organize their recipes according to the cuisine to which they belong. A cuisine is categorized by its attributes, i.e. Italian cuisine is a national cuisine, but Mediterranean cuisine is a regional cuisine. When creating a profile, users are prompted to list their experience and location, allowing for the application to see the geographic diversity of its users.
+
+Once the user has successfully signed in or signed up, they are given the option to create a cuisine from scratch, or browse a catalogue of existing cuisines created by other users. Once at this index page, they may enter into a specific cuisine, and see all of the meals that are associated with the aforementioned cuisine. The meals on this index page display their respective ratings. Here, there is a search bar that allows a user to enter a certain rating for a meal. For instance, if a user wanted to see meals with a rating of 10, they would click the search bar and be redirected to an index page showing all meals with this rating. 
+
+Once a user has clicked on a specific meal, they will be directed to that meal's show page, where they can see the meal's course (breakfast, lunch, dinner), prep time, difficulty, ingredients, notes, and description. Here, I added a feature that restricts a user from editing any meals that were not created by them. However, if they did create the meal, they can edit this. 
+
+Another small detail on which I focused during this project was making the site navigable. I approached this in two ways: by adding a toolbar across the top of the screen that allows a user to navigate to their profile, to the cuisine list, and to sign out, and by adding "Back to..." buttons on each screen, so that it is not necessary to use the browser to navigate to the last page (hitting the back button at the top of the screen). Additionally, my toolbar displays are conditional. A user will only see the login links for Omniauth and standard login if they are not currently logged in. At this point, they will not see links to their profile, to cuisines, or to sign out. These small details allow for a more enjoyable, and realistic, user experience.
+
+In my approach to this project, I was careful to code in a logical manner. For example, I would start with a route, code the corresponding action, then take on the view. Once that piece was finished, I would move onto the next task, which was usually an extension of the first. For instance, I would code out the new route, new action, and the new form; then, I would move onto the create action. In this way, I was able to piece together my application so that I minimized errors in the cohesiveness of my code. 
+
+As with the last time, Omniauth was one of the most difficult parts of the project. Here, I encountered a CSRF error, which is a security error that protects against malicious attacks that are triggered by clicking on some form of altered content on the website. This took a long time to resolve, and was fixed after figuring out that Google requires a callback URL that fits their criteria. So, after reinstalling all of the relevant code multiple times and refreshing the ENV and user credentials, it was all a matter of syntax on the Google Developer webpage. Once this was complete, most of the user authentication system (login, signup, logout) was relatively simple. 
+
+My scope method, which allows users to find meals that are in the Dinner category, was also a difficult endeavor. At first, I tried to build a scope method that allowed users to sort the meals in a given cuisine by their ratings, from highest to lowest (DESC). Originally, the code was: 
+
+```
+ scope :search_by_rating, -> (rating){where("rating = ?", rating)}
+```
+
+For whatever reason, I received a "No Method Error for nil Class." I couldn't get around this, so I decided to take another route. My second scope method turned out like this:
+
+```
+scope :for_dinner, -> {where(course: "Dinner") }
+```
+
+Short, sweet, and to the point. The only bug that I could not work out was that, when a user attempts to call the scope method via a search form, all of the meals that are labeled as 'Dinner' are displayed, even within a cuisine to which they may not belong. While trying to solve this, I attempted to place this form in the Cuisine index view; however, this did not work, even after adding different arguments. 
+
+My only regret with this project was that I wasn't able to add better aesthetics that would mimic a traditional website. With that being said, I feel that my underlying code is very strong, simple, and DRY. That is the primary focus of this project, and I am happy with the result. 
+
+Now, all that's left is to pass the review. Thank goodness for second chances. 
+
+
