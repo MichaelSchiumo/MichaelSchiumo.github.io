@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "TeamUp Javascript Project"
-date:       2019-11-11 21:43:02 +0000
+date:       2019-11-11 16:43:03 -0500
 permalink:  teamup_javascript_project
 ---
 
