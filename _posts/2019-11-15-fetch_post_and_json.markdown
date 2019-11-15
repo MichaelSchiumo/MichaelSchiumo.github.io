@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "FETCH POST AND JSON"
-date:       2019-11-15 20:15:33 +0000
+date:       2019-11-15 15:15:34 -0500
 permalink:  fetch_post_and_json
 ---
 
