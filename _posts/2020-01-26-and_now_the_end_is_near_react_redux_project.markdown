@@ -1,0 +1,18 @@
+---
+layout: post
+title:      "And Now, The End is Near...(React/Redux Project)"
+date:       2020-01-26 21:45:54 +0000
+permalink:  and_now_the_end_is_near_react_redux_project
+---
+
+
+
+Well, it is finally here. I have finished my final project, although, much like fashion is never finished, neither will this be. This was absolutely the most-challenging so far. It is funny, because, even working with Technical Coaches and Cohort Leads, I repeatedly hear how difficult it is to work with React and Redux, because of the process of debugging. Nevertheless, I made it through, albeit not unscathed. 
+
+I think that the first difficult thing for this project was to develop an idea for a project that would encapsulate all of the skills that I have learned in the past year. Finally, I arrived at an idea that filled a need in my own life: a way to track and fulfill goals and aspirations, with the aid of inspirational quotes, songs, and other motivational mediums. Due to the time constraint of two weeks, I wasn't able to fully develop the capabilities that I had, at first, imagined. Eventually, I would like the application to be a way for people to create a headspace, to find inspiration. I am an avid writer, and find it very helpful to watch some inspirational speeches (Obama's Audacity of Hope is my favorite) and put on a playlist that fits my current mood. This allows me to truly focus and hone in on the idea that I am trying to express. Once I have finished my time at Flatiron School, I will most certainly revisit this project and iron out these details. 
+
+One of the most-rewarding and encouraging parts of this project was building out the backend. Naturally, the backend was built with the aid of Ruby on Rails. It is almost laughable to think back to my first Rails project, and the amount of difficulty that I encountered along the way. Now, I am entirely comfortable navigating the complexities and intricacies, and was able to develop my Rails component of this project with hardly a hiccup. I incorporated the FAST JSON capabilities in my controllers and serializers, and was able to develop the necessary data structures. Within my backend, I call my users "dreamers." Each dreamer has many aspirations, and each dreamer has many quotes. Through this, a dreamer is able to create a unique space for themselves. 
+
+Now, the frontend was a different story. It was difficult for me to build out the structure of my project. How to pass properties from one component to a child component. How to build a reducer, and return the correct state and match up with the corresponding action to manage this state throughout the application. I did find some solace in conditional rendering, which allowed me to create a more-navigable application. To elaborate, when a dreamer first visits the application, they are asked to create a profile. Only once the application has determined that the dreamers array is not empty will it display the links to create quotes and aspirations. Once again, when the application determines that there are no aspirations or no quotes, the tabs to "View Aspirations" and "View Quotes" are not visible. Through this conditional rendering, I was able to build an application that builds on itself. It grows as the dreamer builds his/her space. That is what Aspiration Station intends to do. 
+
+All in all, there remains a good deal to do to complete this project. However, I can say that I am content with the result. Moreover, I can say that I am impressed with my own skills, and that I have finally gained the confidence to say, "Yeah, I am a Full-Stack Web Developer." 
