@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "And Now, The End is Near...(React/Redux Project)"
-date:       2020-01-26 21:45:54 +0000
+date:       2020-01-26 16:45:55 -0500
 permalink:  and_now_the_end_is_near_react_redux_project
 ---
 
