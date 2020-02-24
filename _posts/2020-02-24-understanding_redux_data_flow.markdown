@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Understanding Redux Data Flow"
-date:       2020-02-24 17:06:05 +0000
+date:       2020-02-24 12:06:06 -0500
 permalink:  understanding_redux_data_flow
 ---
 
