@@ -20,5 +20,5 @@ O(N^2) represents an algorithm, the processing time of which increases at the ra
 
 Finally, O(2N) is an algorithm, the processing time of which increases exponentially with the size of the dataset. It is common to see this type of algorithm in scenarios in which recursion is utilized. 
 
-Naturally, this information was overwhelming when first encountered it. However, it inspired the realization of what I must do now. In response, I invested in a book on the theory of JavaScript, which will become my Bible of Coding in the coming weeks and months. Secondly, I have begun to utilize online resources, such as CodeWars, that give example questions that mimic those that may be encountered in interviews. It is safe to say that I have my work cut out for me. Cheers to many more long days!
+Naturally, this information was overwhelming when I first encountered it. However, it inspired the realization of what I must do now. In response, I invested in a book on the theory of JavaScript, which will become my Bible of Coding in the coming weeks and months. Secondly, I have begun to utilize online resources, such as CodeWars, that give example questions that mimic those that may be encountered in interviews. It is safe to say that I have my work cut out for me. Cheers to many more long days!
 
