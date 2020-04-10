@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "The "MaxChars" Problem"
-date:       2020-04-10 20:10:35 +0000
+date:       2020-04-10 16:10:36 -0400
 permalink:  the_maxchars_problem
 ---
 
