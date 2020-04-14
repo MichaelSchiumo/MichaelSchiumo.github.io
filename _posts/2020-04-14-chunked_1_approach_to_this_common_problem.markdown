@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Chunked: 1 Approach to This Common Problem"
-date:       2020-04-14 19:53:16 +0000
+date:       2020-04-14 15:53:17 -0400
 permalink:  chunked_1_approach_to_this_common_problem
 ---
 
